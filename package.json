@@ -2,11 +2,12 @@
   "name": "char-assignment",
   "version": "1.0.0",
   "description": "This is the project to list charcters",
-  "main": "App.js",
+  "homepage":".",
   "scripts": {
     "start": "parcel index.html",
     "watch": "parcel watch index.html",
     "build": "parcel build index.html",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
