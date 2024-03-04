@@ -1,0 +1,1 @@
+{"mappings":"AAAA;;;;;;AAKA","sources":["index.css"],"sourcesContent":[".header {\n    display: flex;\n    justify-content: space-between;\n    border: 1px solid gray;\n}\n.logo {\n    width: 100px;\n}"],"names":[],"version":3,"file":"char-assignment.9e4c6fd2.css.map","sourceRoot":"/__parcel_source_root/"}

@@ -1,0 +1,107 @@
+.header {
+  justify-content: space-between;
+  display: flex;
+}
+
+.logo {
+  width: 100px;
+}
+
+.card-container {
+  background-color: #f4f3f3;
+  border: 1px solid #0000;
+  border-radius: 5px;
+  width: 30%;
+  height: auto;
+  margin: 10px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.card {
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+  padding: 20px 15px;
+  display: grid;
+}
+
+.card-first-section {
+  width: 90%;
+}
+
+.card-first-section img {
+  width: 100%;
+}
+
+.name-detail a {
+  text-decoration: none;
+}
+
+.name-detail a h1 {
+  color: #000;
+  margin: 0;
+}
+
+.title {
+  color: #929090;
+}
+
+.location-detail, .name-detail, .seen-detail {
+  padding-bottom: 15px;
+}
+
+.shimmer-container {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.shimmer-card {
+  background-color: #f0f0f0;
+  width: 180px;
+  height: 300px;
+  margin: 10px;
+  padding: 5px;
+  transition: all .3s;
+  box-shadow: 0 4px 8px #0003;
+}
+
+.character-container {
+  background-color: #f4f3f3;
+  border: 1px solid #0000;
+  border-radius: 5px;
+  width: 50%;
+  height: auto;
+  padding: 5px;
+  display: inline-block;
+}
+
+.character-container .outer {
+  display: inline-flex;
+}
+
+.character-container .outer p {
+  padding-left: 20px;
+}
+
+.character-container .outer p span {
+  padding-bottom: 15px;
+  font-size: 22px;
+  display: block;
+}
+
+@media only screen and (device-width <= 768px) {
+  .card-container {
+    width: 90%;
+    display: block;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .card-first-section {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.9e4c6fd2.css.map */
