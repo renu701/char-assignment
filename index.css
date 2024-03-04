@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    width: 100px;
+}
+
+/* Card Layout CSS */
+
+.card-container {
+    background-color: #f4f3f3;
+    border: 1px solid #0000;
+    border-radius: 5px;
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    margin: 10px;
+    display: inline-block;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    row-gap: 20px;
+    padding: 20px 15px;
+}
+.card-first-section {
+    width: 90%;
+}
+.card-first-section img {
+    width: 100%;
+}
+.name-detail a {
+    text-decoration: none;
+}
+.name-detail a h1 {
+    margin: 10px 0px;
+    color: black;
+}
+
+
+
+
+/* media query css */
+@media only screen and (max-device-width: 768px){
+    .card-container {
+        display: block;
+        width: 90%;
+    }
+    .card {
+        grid-template-columns: 1fr;
+    }
+    .card-first-section {
+        width: 100%;
+    }
+}

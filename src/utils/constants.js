@@ -1,0 +1,1 @@
+export const LOGO_URL = 'https://img.freepik.com/free-vector/male-artist-painter-mascot-logo_197582-330.jpg?w=826&t=st=1709529110~exp=1709529710~hmac=e94147818597b2a4015ea568df0c741ced2a61498386e706a02ebcec0431fd49'
