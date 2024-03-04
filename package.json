@@ -2,7 +2,7 @@
   "name": "char-assignment",
   "version": "1.0.0",
   "description": "This is the project to list charcters",
-  "homepage":"https://github.com/renu701/char-assignment/src",
+  "homepage":"https://github.com/renu701/char-assignment/",
   "scripts": {
     "start": "parcel index.html",
     "watch": "parcel watch index.html",
