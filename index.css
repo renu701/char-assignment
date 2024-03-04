@@ -36,11 +36,58 @@
     text-decoration: none;
 }
 .name-detail a h1 {
-    margin: 10px 0px;
+    margin: 0px;
     color: black;
 }
 
+.title {
+    color: #929090;
+}
+.location-detail,
+.name-detail,
+.seen-detail {
+    padding-bottom: 15px;
+}
 
+/* shimmer layout css */
+
+
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  padding: 5px;
+  margin: 10px;
+  width: 180px;
+  height: 300px;
+  background-color: rgb(240, 240, 240);
+}
+
+/* detail page CSS */
+.character-container {
+    background-color: #f4f3f3;
+    border: 1px solid #0000;
+    border-radius: 5px;
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    display: inline-block;
+}
+.character-container .outer {
+    display: inline-flex;
+}
+.character-container .outer p {
+     padding-left: 20px;
+}
+
+.character-container .outer p span{
+    display: block;
+    padding-bottom: 15px;
+    font-size: 22px;
+}
 
 
 /* media query css */

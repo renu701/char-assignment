@@ -1,17 +1,20 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
-import Header from "./components/header";
 import Body from "./components/Body";
 import Error from "./components/Error";
 import { createBrowserRouter , Outlet, RouterProvider } from "react-router-dom";
+import store from "./store/store";
+import {Provider} from 'react-redux'
 import CharacterCardDetail from "./components/CharacterCardDetail";
+
 
 const AppLayout = () =>{
     return (
-        <div className="app-container">
-            <Header />
-            <Outlet />
-        </div>
+        <Provider store={store}>
+            <div className="app-container">
+                <Outlet />
+            </div>
+        </Provider>
     )
 }
 

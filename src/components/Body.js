@@ -1,24 +1,24 @@
 import { useState , useEffect } from "react";
 import Shimmer from "./Shimmer";
 import CharacterCard from "./CharacterCard";
+import { ITEM_API } from "../utils/constants"
+import { useDispatch, useSelector } from 'react-redux';
+import { UPDATE_CHARACTERS_LIST } from "../store/slice/charSlice";
 const Body = () => {
-
-    const [charLists,setCharLists] = useState([]);
-
-
+    const dispatch = useDispatch();
+    const charLists = useSelector((state) => state.list)
     useEffect(()=>{
         fetchData();
     },[])
 
 
     const fetchData = async() =>{
-        const data = await fetch('https://rickandmortyapi.com/api/character');
+        const data = await fetch(ITEM_API);
         const json = await data.json();
-        setCharLists(json?.results)
-        console.log(json);
+        console.log('json',json);
+        dispatch(UPDATE_CHARACTERS_LIST(json.results))
     }
 
-    console.log("charList",charLists);
 
     return charLists.length === 0 ? <Shimmer /> : (
         <div className="list-container">
