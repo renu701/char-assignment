@@ -1,18 +1,17 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit";
 
 const charSlice = createSlice({
-    name:"character",
-    initialState:{
-        list:[]
+  name: "character",
+  initialState: {
+    list: {},
+  },
+  reducers: {
+    // actions if any
+    UPDATE_CHARACTERS_LIST: (state, action) => {
+      state.list = action.payload;
     },
-    reducers:{
-        // actions if any
-        UPDATE_CHARACTERS_LIST: (state, action) => {
-            console.log('actio',action.payload)
-            state.list = action.payload;
-        },
-    }
-})
+  },
+});
 
 export const { UPDATE_CHARACTERS_LIST } = charSlice.actions;
 
